@@ -18,17 +18,12 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className="bg-gray-100">
-                <div className="  w-full bg-white">
+            <body className={`${inter.className}  `}>
+                <div className="bg-white">
                     <Navbar />
                 </div>
-                <main
-                    className={`${inter.className} relative overflow-hidden   `}
-                >
-                    {children}
-                </main>
-                <div className="">
-                    <hr />
+                <main className={`    bg-gray-100   `}>{children}</main>
+                <div className="   w-full bg-white">
                     <Footer />
                 </div>
             </body>

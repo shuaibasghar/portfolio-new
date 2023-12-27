@@ -14,7 +14,68 @@ body {
     font-family: Inter;
 }
 
+/* Your existing Tailwind CSS styles go here */
+
+/* Your existing Tailwind CSS styles go here */
+
+@layer components {
+    .button-hire-me {
+        font-size: 30px;
+        padding: 12px 24px;
+        border: 2px solid #1d4ed8;
+        background-color: transparent;
+        border-radius: 10px;
+        color: #1d4ed8;
+        transition: 0.3s;
+    }
+    .button-hire-me:hover {
+        box-shadow: 8px 8px #93c5fd;
+        background-color: #1d4ed8;
+        color: white;
+        transition: 0.3s;
+    }
+    .button-download-cv {
+        font-size: 30px;
+        padding: 12px 24px;
+        border: 2px solid #1d4ed8;
+        /* background-color: transparent; */
+        border-radius: 10px;
+        /* color: #1d4ed8; */
+        transition: 0.3s;
+        box-shadow: 8px 8px #93c5fd;
+        background-color: #1d4ed8;
+        color: white;
+    }
+    .button-download-cv:hover {
+        box-shadow: 8px 8px #93c5fd;
+        background-color: #1d4ed8;
+        color: white;
+        transition: 0.3s;
+    }
+}
+
 @layer utilities {
+    /* Status Indicator */
+    @keyframes statusAnimation {
+        0%,
+        100% {
+            background-color: #84cc16; /* Off color */
+            transform: scale(0);
+        }
+        50% {
+            background-color: #84cc16; /* On color */
+            transform: scale(1.2);
+        }
+    }
+
+    .status-indicator {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        animation: statusAnimation 2s infinite;
+    }
+
     .btn_white {
         @apply border-white bg-white px-8 py-3 text-green-50;
     }
@@ -124,6 +185,9 @@ body {
         @apply text-[16px] font-[700];
     }
 
+    .min-height {
+        @apply h;
+    }
     /* Hero */
     .hero-map {
         @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
