@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import { useRouter } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +19,14 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={`${inter.className}  `}>
-                <div className="bg-white">
+            <body className={`${inter.className} bg-[#f8f8f8] `}>
+                <div className=" bg-white sticky top-0  overflow ">
                     <Navbar />
                 </div>
-                <main className={`    bg-gray-100   `}>{children}</main>
-                <div className="   w-full bg-white">
+                <main className={`  max-container  bg-[#f8f8f8] `}>
+                    {children}
+                </main>
+                <div className="w-full bg-white">
                     <Footer />
                 </div>
             </body>

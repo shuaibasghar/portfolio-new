@@ -4,14 +4,22 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <div className="h-[80vh] max-container  bg-white p-5">
-            <div className="  h-[75vh] max-container flex justify-around">
+        <div className="   bg-white rounded-2xl  shadow-lg scale-400">
+            <div className=" mt-14 h-[75vh]  flex  justify-around items-center  ">
                 <div className="w-[40%]">
-                    <h1 className="text-[40px]  font-semibold text-gray-30 mt-10 ">
+                    <h1 className="text-[40px]  font-semibold text-black-100 mt-10 ">
                         Mernstack Developer
                     </h1>
+                    <div className="flex items-center   py-2 gap-3 rounded-full ">
+                        <div className="status-indicator" />
+                        <Link href="https://www.fiverr.com/s/eAr0L3">
+                            <h1 className="text-[20px] text-green-10 font-semibold ">
+                                AVAILABLE FOR WORK
+                            </h1>
+                        </Link>
+                    </div>
                     <div className="">
-                        <div className="mt-32">
+                        <div className="mt-20">
                             <h1 className="  text-[50px] font-semibold text-blue-10">
                                 I am Shuaib Asghar
                             </h1>
@@ -32,23 +40,13 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="">
-                    <div className="flexCenter bg-blue-20 px-6 py-2 gap-3 rounded-full mt-10">
-                        <div className="status-indicator" />
-                        <Link href="https://www.fiverr.com/s/eAr0L3">
-                            <h1 className="text-[20px] text-green-10 font-semibold ">
-                                AVAILABLE FOR WORK
-                            </h1>
-                        </Link>
-                    </div>
-                    <Image
-                        className=" rounded-full"
-                        src={"/profile.jpg"}
-                        alt="profile"
-                        width={400}
-                        height={250}
-                    />
-                </div>
+                <Image
+                    className="border-8 rounded-full"
+                    src={"/profile.jpg"}
+                    alt="profile"
+                    width={400}
+                    height={250}
+                />
             </div>
         </div>
     );
