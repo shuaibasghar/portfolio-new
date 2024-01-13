@@ -9,11 +9,22 @@ import Image from "next/image";
 export default function Home() {
     return (
         <section className="flex flex-col ">
-            <Hero />
-            <Expertise />
-            <Experience />
-            <Work />
-            <Contact />
+            <div className="bg-[#f8f8f8]">
+                <Hero />
+            </div>
+            <div className="bg-[#f8f8f8]">
+                <Expertise />
+            </div>
+            <div className="bg-[#bdc7d0]">
+                <Work />
+            </div>
+            <div className="bg-[#f8f8f8]">
+                <Experience />
+            </div>
+
+            <div className="bg-[#f8f8f8]">
+                <Contact />
+            </div>
         </section>
     );
 }

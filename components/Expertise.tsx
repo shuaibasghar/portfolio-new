@@ -9,7 +9,7 @@ const Expertise = () => {
     return (
         <section
             id="expertise"
-            className="h-screen   bg-neutral-100 flex flex-col justify-center    "
+            className="max-container h-screen p-5   bg-neutral-100 flex flex-col justify-center    "
         >
             <h1 className="text-[40px] font-semibold text-center mb-10">
                 My Expertise
@@ -40,13 +40,14 @@ const Expertise = () => {
                     btnlabel="Hire as React-native Developer"
                 />
             </div>
-
-            <Link
-                href={"/expertise"}
-                className="mt-20 btn btn-outline btn-primary  w-full "
-            >
-                VIEW MORE
-            </Link>
+            <div className="flex items-center justify-center ">
+                <Link
+                    href={"/expertise"}
+                    className=" mt-20 md:w-full lg:w-96 sm:w-full btn bg-transparent border-2 border-blue-10 hover:text-white hover:bg-blue-10  hover:transition-all "
+                >
+                    VIEW MORE
+                </Link>
+            </div>
         </section>
     );
 };

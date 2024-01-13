@@ -6,30 +6,16 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="rounded-2xl  bg-neutral-100 flex flex-col justify-center items-center"
+            className="h-screen max-container flex flex-col justify-center items-center"
         >
-            <div className="  h-[75vh]  flex items-center justify-center   ">
-                <div className="w-[40%]">
-                    <h1 className=" text-center text-[40px]  font-semibold text-black-100 mt-10 ">
-                        My Contact
-                    </h1>
-
-                    <div className="flex items-center justify-center">
-                        <div>
-                            <div>
-                                <p>header-section</p>
-                            </div>
-                            <p>card-one</p>
-                        </div>
-                    </div>
-                </div>
+            <div className="flex items-center justify-center ">
+                <Link
+                    href={"/expertise"}
+                    className=" mt-20 md:w-full lg:w-96 sm:w-full btn bg-transparent border-2 border-blue-10 hover:text-white hover:bg-blue-10  hover:transition-all "
+                >
+                    VIEW MORE
+                </Link>
             </div>
-            <Link
-                href={"/contact"}
-                className="btn btn-outline btn-primary  w-full "
-            >
-                VIEW MORE
-            </Link>
         </section>
     );
 };

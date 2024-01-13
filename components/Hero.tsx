@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <div className=" h-screen  rounded-2xl   scale-400">
+        <div className="max-container h-screen  rounded-2xl   scale-400">
             <div className=" h-[75vh]  flex  justify-around items-center  ">
                 <div className="bg-white  p-5  rounded-xl w-[40%]">
                     <h1 className="text-[40px]  font-semibold text-black-100 mt-10 ">
@@ -14,7 +14,7 @@ const Hero = () => {
                         <div className="status-indicator" />
                         <Link href="https://www.fiverr.com/s/eAr0L3">
                             <h1 className="text-[20px] text-green-10 font-semibold ">
-                                AVAILABLE FOR WORK
+                                Hire On Fiverr
                             </h1>
                         </Link>
                     </div>

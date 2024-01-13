@@ -6,30 +6,46 @@ const Experience = () => {
     return (
         <section
             id="experience"
-            className="h-screen rounded-2xl  bg-neutral-100 flex flex-col justify-center items-center"
+            className="h-screen max-container flex flex-col justify-center items-center"
         >
-            <div className="  h-[75vh]  flex items-center justify-center   ">
-                <div className="w-[40%]">
-                    <h1 className=" text-center text-[40px]  font-semibold text-black-100 mt-10 ">
-                        My Experience
-                    </h1>
-
-                    <div className="flex items-center justify-center">
-                        <div>
-                            <div>
-                                <p>header-section</p>
-                            </div>
-                            <p>card-one</p>
-                        </div>
-                    </div>
+            <h1 className="text-4xl text-white font-semibold">
+                Professional Experience
+            </h1>
+            <div className="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" checked={true} />
+                <div className="collapse-title text-xl font-medium">
+                    Click to open this one and close others
+                </div>
+                <div className="collapse-content">
+                    <p>hello</p>
                 </div>
             </div>
-            <Link
-                href={"/experience"}
-                className="btn btn-outline btn-primary  w-full "
-            >
-                VIEW MORE
-            </Link>
+            <div className="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div className="collapse-title text-xl font-medium">
+                    Click to open this one and close others
+                </div>
+                <div className="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div className="collapse collapse-plus bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div className="collapse-title text-xl font-medium">
+                    Click to open this one and close others
+                </div>
+                <div className="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div className="flex items-center justify-center ">
+                <Link
+                    href={"/expertise"}
+                    className=" mt-20 md:w-full lg:w-96 sm:w-full btn bg-transparent border-2 border-blue-10 hover:text-white hover:bg-blue-10  hover:transition-all "
+                >
+                    VIEW MORE
+                </Link>
+            </div>
         </section>
     );
 };

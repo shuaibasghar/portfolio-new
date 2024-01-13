@@ -19,13 +19,11 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={`${inter.className} bg-[#f8f8f8] `}>
+            <body className={`${inter.className}  `}>
                 <div className=" bg-white lg:sticky lg:top-0 shadow-lg ">
                     <Navbar />
                 </div>
-                <main className={`  max-container  bg-[#f8f8f8] `}>
-                    {children}
-                </main>
+                <main className={`     `}>{children}</main>
                 <div className="w-full bg-white">
                     <Footer />
                 </div>
