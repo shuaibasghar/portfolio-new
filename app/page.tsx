@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Expertise from "@/components/Expertise";
 import Hero from "@/components/Hero";
@@ -7,9 +8,12 @@ import Image from "next/image";
 
 export default function Home() {
     return (
-        <section>
+        <section className="flex flex-col ">
             <Hero />
             <Expertise />
+            <Experience />
+            <Work />
+            <Contact />
         </section>
     );
 }

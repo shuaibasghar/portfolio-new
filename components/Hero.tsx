@@ -4,11 +4,11 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <div className="   bg-white rounded-2xl  shadow-lg scale-400">
-            <div className=" mt-14 h-[75vh]  flex  justify-around items-center  ">
-                <div className="w-[40%]">
+        <div className=" h-screen  rounded-2xl   scale-400">
+            <div className=" h-[75vh]  flex  justify-around items-center  ">
+                <div className="bg-white  p-5  rounded-xl w-[40%]">
                     <h1 className="text-[40px]  font-semibold text-black-100 mt-10 ">
-                        Mernstack Developer
+                        Fullstack Developer
                     </h1>
                     <div className="flex items-center   py-2 gap-3 rounded-full ">
                         <div className="status-indicator" />
@@ -19,7 +19,7 @@ const Hero = () => {
                         </Link>
                     </div>
                     <div className="">
-                        <div className="mt-20">
+                        <div className="mt-10">
                             <h1 className="  text-[50px] font-semibold text-blue-10">
                                 I am Shuaib Asghar
                             </h1>
@@ -40,13 +40,15 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <Image
-                    className="border-8 rounded-full"
-                    src={"/profile.jpg"}
-                    alt="profile"
-                    width={400}
-                    height={250}
-                />
+                <div>
+                    <Image
+                        className="border-8 rounded-full"
+                        src={"/profile.jpg"}
+                        alt="profile"
+                        width={400}
+                        height={250}
+                    />
+                </div>
             </div>
         </div>
     );

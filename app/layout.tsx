@@ -20,7 +20,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${inter.className} bg-[#f8f8f8] `}>
-                <div className=" bg-white sticky top-0  overflow ">
+                <div className=" bg-white lg:sticky lg:top-0 shadow-lg ">
                     <Navbar />
                 </div>
                 <main className={`  max-container  bg-[#f8f8f8] `}>
