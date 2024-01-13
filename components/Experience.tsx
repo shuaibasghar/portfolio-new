@@ -11,31 +11,34 @@ const Experience = () => {
             <h1 className="text-4xl text-white font-semibold">
                 Professional Experience
             </h1>
-            <div className="collapse collapse-plus bg-base-200">
-                <input type="radio" name="my-accordion-3" checked={true} />
-                <div className="collapse-title text-xl font-medium">
-                    Click to open this one and close others
+            <div className="collapse collapse-plus bg-blue-10 mb-5">
+                <input type="radio" name="my-accordion-3" defaultChecked />
+                <div className=" flex justify-between collapse-title text-xl font-semibold text-white">
+                    <p>Fullstack developer @ Fiverr</p>
+                    <p>2023-Present</p>
                 </div>
-                <div className="collapse-content">
-                    <p>hello</p>
-                </div>
-            </div>
-            <div className="collapse collapse-plus bg-base-200">
-                <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-xl font-medium">
-                    Click to open this one and close others
-                </div>
-                <div className="collapse-content">
-                    <p>hello</p>
+                <div className="collapse-content text-white ">
+                    <p>Fiverr</p>
                 </div>
             </div>
-            <div className="collapse collapse-plus bg-base-200">
+            <div className="collapse collapse-plus bg-blue-10 mb-5">
                 <input type="radio" name="my-accordion-3" />
-                <div className="collapse-title text-xl font-medium">
-                    Click to open this one and close others
+                <div className=" flex justify-between collapse-title text-xl font-semibold text-white">
+                    <p>Junior Software Developer @ Devaxl</p>
+                    <p>2023-2024</p>
                 </div>
-                <div className="collapse-content">
-                    <p>hello</p>
+                <div className="collapse-content text-white ">
+                    <p>Fiverr</p>
+                </div>
+            </div>
+            <div className="collapse collapse-plus bg-blue-10 mb-5 ">
+                <input type="radio" name="my-accordion-3" />
+                <div className=" flex justify-between collapse-title text-xl font-semibold text-white">
+                    <p>Frontend developer @ Nexusberry</p>
+                    <p>2022-2023</p>
+                </div>
+                <div className="collapse-content text-white ">
+                    <p>Fiverr</p>
                 </div>
             </div>
             <div className="flex items-center justify-center ">

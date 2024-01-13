@@ -18,7 +18,7 @@ export default function Home() {
             <div className="bg-[#bdc7d0]">
                 <Work />
             </div>
-            <div className="bg-[#f8f8f8]">
+            <div className="bg-[#c2ccd5]">
                 <Experience />
             </div>
 
