@@ -6,12 +6,8 @@ import React, { useEffect, useState } from "react";
 
 import { CiSearch, CiBellOn } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
-interface NavLink {
-    key: string;
-    href: string;
-    label: string;
-}
-const Navbar: React.FC<NavLink> = () => {
+
+const Navbar: React.FC = () => {
     const [header, setHeader] = useState(false);
 
     const scrollHeader = () => {

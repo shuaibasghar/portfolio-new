@@ -1,9 +1,3 @@
-interface NavLink {
-    key: string;
-    href: string;
-    label: string;
-}
-
 // NAVIGATION
 export const NAV_LINKS = [
     { href: "/", key: "home", label: "Home" },
